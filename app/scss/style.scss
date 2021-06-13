@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 html {
     box-sizing: border-box;
@@ -46,6 +46,11 @@ p {
     padding: 0;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 body {
     font-family: $roboto;
     font-size: $global-size;
@@ -65,3 +70,16 @@ form {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.button {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    padding: 15px 30px;
+    background: linear-gradient(180deg, #FFFFFF -153.33%, rgba(255, 255, 255, 0) 125.56%), #404144;
+    background-blend-mode: overlay, normal;
+    position: relative;
+}
+
+@import "home";
