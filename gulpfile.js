@@ -50,9 +50,10 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss',
-               'node_modules/normalize.css/normalize.css'
-        )
+    return src([
+        'node_modules/normalize.css/normalize.css',
+        'app/scss/style.scss',
+    ])
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
