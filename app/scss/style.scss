@@ -80,6 +80,10 @@ form {
     background: linear-gradient(180deg, #FFFFFF -153.33%, rgba(255, 255, 255, 0) 125.56%), #404144;
     background-blend-mode: overlay, normal;
     position: relative;
+    transition: box-shadow .3s;
+    &:hover {
+        box-shadow: 0px 4px 35px rgba(230, 98, 41, 0.5);
+    }
 }
 
 @import "home";
