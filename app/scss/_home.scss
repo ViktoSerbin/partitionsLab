@@ -525,7 +525,7 @@
                 background-blend-mode: overlay, normal;
                 height: 5px;
                 width: 0;
-                transition: width .3s;
+                transition: width 0.3s;
             }
         }
     }
@@ -579,7 +579,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            transition: all .3s;
+            transition: all 0.3s;
         }
         &--price {
             padding: 10px 0px;
@@ -598,6 +598,7 @@
             line-height: 160%;
         }
         &--text {
+            flex: 1 1 auto;
             padding: 20px;
             line-height: 110%;
             color: $text-color;
@@ -612,5 +613,77 @@
                 }
             }
         }
+    }
+}
+
+.home__facts {
+    background: url("../images/home/facts-bg.jpg") center/cover fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    color: #fff;
+    &-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-title {
+        font-family: $raleway;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .facts-title__top {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .facts-title__bottom {
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 250px;
+    }
+    &-items {
+        display: flex;
+        &:last-child {
+            border-top: 1px solid rgba(#fff, 0.2);
+        }
+    }
+    &-item {
+        max-width: 320px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &:last-child {
+            padding-right: 0;
+            padding-left: 40px;
+            border-left: 1px solid rgba(#fff, 0.2);
+        }
+    }
+    &-descr {
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 59px;
+        color: #f06326;
+        margin-bottom: 15px;
+        span {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.1em;
+        }
+    }
+    &-doptext {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #f06326;
+    }
+    &-text {
+        line-height: 20px;
+    }
+    &-box--items {
+        display: flex;
+        align-items: flex-end;
+    }
+    &-box--item {
+        margin-left: 40px;
     }
 }
