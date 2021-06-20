@@ -77,13 +77,40 @@ form {
     line-height: 15px;
     color: #fff;
     padding: 15px 30px;
-    background: linear-gradient(180deg, #FFFFFF -153.33%, rgba(255, 255, 255, 0) 125.56%), #404144;
+    background: linear-gradient(
+            180deg,
+            #ffffff -153.33%,
+            rgba(255, 255, 255, 0) 125.56%
+        ),
+        #404144;
     background-blend-mode: overlay, normal;
     position: relative;
-    transition: box-shadow .3s;
+    transition: box-shadow 0.3s;
     &:hover {
         box-shadow: 0px 4px 35px rgba(230, 98, 41, 0.5);
     }
+}
+
+.title {
+    font-family: $raleway;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    color: $text-color;
+    span {
+        font-weight: 800;
+    }
+}
+
+._tabs {
+}
+._tabs-item {
+}
+._tabs-block {
+	display: none;
+	&._active {
+		display: block;
+	}
 }
 
 @import "home";
